@@ -8,7 +8,7 @@
 
 package Assignment;
 
-class Object{
+public class Object{
 	int id;
 	String name;
 	private Object(int id,String name){  	//private constructor
