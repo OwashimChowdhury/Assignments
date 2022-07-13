@@ -1,13 +1,19 @@
+/*
+ * @author:Owashim chowdhury
+ * java program of Interface 
+ */
 package Assignment;
 
 interface LibraryUser{
-	void registerAccount();
-	void requestBook();
+	void registerAccount();  //method without body
+	void requestBook();  //method without body
 }
+//child class implements interface
 class KidUser implements LibraryUser{
 	int age;
 	String bookType;
 	public void registerAccount(){
+		//if else statement
 		if(age<12)
 			System.out.println("You have successfully registered under a Kids Account");
 		else 
@@ -41,6 +47,7 @@ class AdultUser implements LibraryUser{
 public class LibraryInterfaceDemo {
 
 	public static void main(String[] args) {
+		//creating object, set value and calling
 		KidUser kd=new KidUser();
 		kd.age=10;
 		kd.bookType="kids";
@@ -52,6 +59,7 @@ public class LibraryInterfaceDemo {
 		kd.registerAccount();
 		kd.requestBook();
 		
+		//creating object, set value and calling
 		AdultUser ad=new AdultUser();
 		ad.age=5;
 		ad.bookType="kids";
@@ -63,4 +71,4 @@ public class LibraryInterfaceDemo {
 		ad.registerAccount();
 		ad.requestBook();	
 	}
-}
+}	//end of main class
