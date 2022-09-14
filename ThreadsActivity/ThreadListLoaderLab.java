@@ -10,10 +10,10 @@ import java.util.ArrayList;
 public class ThreadListLoaderLab implements Runnable{
 	public void run() {
 		
-		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		ArrayList<Integer> numbers = new ArrayList<Integer>(10000000);
 
 		//for loop
-		for (int i = 0; i <= 1000000; i++)
+		for (int i = 0; i <= 10000000; i++)
 		{
 			//adding values
 		   numbers.add(i);
